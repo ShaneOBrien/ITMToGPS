@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="10dp">
+    <TextView
+        android:text="@string/itmEastings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eastingsText" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/eastings" />
+    <TextView
+        android:text="@string/itmNorthings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/northingsText" />
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/northings" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:gravity="center">
+        <Button
+            android:id="@+id/convertITMToGPS"
+            android:text="@string/convertITMToGPS"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="@string/openOSI"
+            android:id="@+id/openOSI"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TextView
+        android:text="@string/latitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/latitudeText" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/latitude" />
+    <TextView
+        android:text="@string/longtitude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/longtitudeText" />
+    <EditText
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/longtitude" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2">
+        <Button
+            android:text="@string/convertGPSToITM"
+            android:id="@+id/convertGPSToITM"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <Button
+            android:text="@string/openGoogleMaps"
+            android:id="@+id/openGoogleMaps"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <TableLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tableLayout1"
+        android:stretchColumns="0,1,2,3,4">
+        <TableRow
+            android:id="@+id/tableRow1">
+            <TextView
+                android:text="@string/latitude"
+                android:id="@+id/latTextView"
+                android:layout_column="0" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="match_parent">
+            <EditText
+                android:inputType="number"
+                android:layout_column="0"
+                android:id="@+id/latDeg"
+                android:layout_width="59.7dp" />
+            <TextView
+                android:text="@string/latDegText"
+                android:layout_column="1"
+                android:id="@+id/latDegText" />
+            <EditText
+                android:inputType="number"
+                android:layout_column="2"
+                android:id="@+id/latMin" />
+            <TextView
+                android:text="@string/latMinText"
+                android:layout_column="3"
+                android:id="@+id/latMinText" />
+            <EditText
+                android:inputType="number"
+                android:layout_column="4"
+                android:id="@+id/latSec"
+                android:layout_width="match_parent" />
+            <TextView
+                android:text="@string/latSecText"
+                android:layout_column="5"
+                android:id="@+id/latSecText"
+                android:layout_width="match_parent" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3">
+            <TextView
+                android:text="@string/longtitude"
+                android:id="@+id/longTextView"
+                android:layout_column="0" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_width="match_parent">
+            <EditText
+                android:inputType="number"
+                android:layout_column="0"
+                android:id="@+id/longDeg"
+                android:layout_width="59.7dp" />
+            <TextView
+                android:text="@string/latDegText"
+                android:layout_column="1"
+                android:id="@+id/longDegText" />
+            <EditText
+                android:inputType="number"
+                android:layout_column="2"
+                android:id="@+id/longMin" />
+            <TextView
+                android:text="@string/latMinText"
+                android:layout_column="3"
+                android:id="@+id/longMinText" />
+            <EditText
+                android:inputType="number"
+                android:layout_column="4"
+                android:id="@+id/longSec"
+                android:layout_width="match_parent" />
+            <TextView
+                android:text="@string/latSecText"
+                android:layout_column="5"
+                android:id="@+id/longSecText"
+                android:layout_width="match_parent" />
+        </TableRow>
+    </TableLayout>
+    <Button
+        android:text="@string/convertLatLongToDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertLatLongDeg" />
+</LinearLayout>

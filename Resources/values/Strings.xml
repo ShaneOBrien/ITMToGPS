@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="convertITMToGPS">Convert to GPS Coords</string>
+	<string name="convertGPSToITM">Convert to ITM Coords</string>
+	<string name="convertLatLongToDecimal">Convert to Decimal Coords</string>
+	<string name="itmEastings">ITM Easting:</string>
+	<string name="itmNorthings">ITM Northing:</string>
+	<string name="latitudeDec">Decimal Latitude:</string>
+	<string name="longtitudeDec">Decimal Longtitude:</string>
+	<string name="latitude">Latitude:</string>
+	<string name="longtitude">Longtitude:</string>
+	<string name="openGoogleMaps">Open in Google Maps</string>
+	<string name="openOSI">Open in OSI</string>
+	<string name="latDegText">Deg</string>
+	<string name="latMinText">Min</string>
+	<string name="latSecText">Sec</string>
+	<string name="app_name">ITM to GPS</string>
+</resources>
